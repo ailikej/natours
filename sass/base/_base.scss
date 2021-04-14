@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+/* note: https://stackoverflow.com/questions/31317238/why-use-selector-in-combination-with-before-and-after */
+
+html {
+    font-size: 62.5%;
+    /* root font size */
+    /* 62.5% x 16 = 10 px === */
+    /* user may change root to something else other than 16 */
+}
+
+body {
+
+    box-sizing: border-box;
+    /* set here and the universal selector will inherit */
+}
+
